@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Service_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Service5"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/app_themecolor"
+            >
+
+            <ImageView
+                android:id="@+id/back5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                />
+            <TextView
+                android:fontFamily="@font/regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="মাগুরা ফায়ার সার্ভিস"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F4F4F4"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="35dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="মাগুরা ফায়ার স্টেশন"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01730-009185"
+                                android:textColor="#9F4124"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+                                android:textIsSelectable="true"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/Fire1"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="103dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="35dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="শ্রীপুর ফায়ার স্টেশন"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01744-146496"
+                                android:textColor="#9F4124"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+                                android:textIsSelectable="true"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/Fire2"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="103dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="35dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="মহম্মদপুর ফায়ার স্টেশন"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01791-912286"
+                                android:textColor="#9F4124"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+                                android:textIsSelectable="true"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/Fire3"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="103dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

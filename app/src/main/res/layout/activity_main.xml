@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ExtraText">
+
+            <LinearLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/app_themecolor"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageMenu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/menu"
+                    app:tint="#FFFFFF"
+                    />
+
+                //===================================//
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="?actionBarSize"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/regular"
+                        android:gravity="center"
+                        android:text="বোয়ালমারী অনলাইন সেবা"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="January 21"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:format12Hour="hh:mm:ss a"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFEB3B"
+                android:id="@+id/con2"
+                android:visibility="gone"
+                android:layout_marginTop="50dp"
+                >
+
+            </LinearLayout>
+
+//=====================================main content======================================//
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:background="#F4F2F2"
+                android:layout_below="@+id/appBar"
+                android:visibility="visible"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/app_themecolor"
+                    android:id="@+id/Header1"
+                    >
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp">
+
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:id="@+id/image_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:iss_auto_cycle="true"
+                            app:iss_delay="0"
+                            app:iss_period="3000"
+                            app:iss_text_align="CENTER"
+                            app:iss_title_background="@color/grey_font"
+                            tools:ignore="MissingClass"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/txtsba"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardimg"
+                        android:gravity="center"
+                        android:text="সেবা সমূহ"
+                        android:textColor="@color/white"
+                        android:textSize="19dp"
+                        android:layout_marginVertical="3dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/txtsba"
+                        android:layout_marginHorizontal="18dp"
+                        android:background="@color/white"
+                        android:layout_marginBottom="10dp"
+                        />
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/Header"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <GridLayout
+                            android:id="@+id/mainGrid"
+                            android:columnCount="4"
+                            android:rowCount="3"
+                            android:alignmentMode="alignMargins"
+                            android:columnOrderPreserved="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="650dp"
+                            android:paddingTop="10dp"
+                            android:layout_marginHorizontal="10dp"
+
+                            >
+
+                            <!-- Row 1 -->
+
+                            <!-- Column 1 -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button1"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_row="0"
+                                    android:layout_column="0"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/news"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/regular"
+                                        android:text="খবর"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <!-- Column 2 -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button2"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/hospital"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="হাসপাতাল"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <!-- Row 2 -->
+
+                            <!-- Column 1 -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button3"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/blood"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="ব্লাড ডোনার"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <!-- Column 2 -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button4"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/ambulence"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="এ্যাম্বুলেন্স"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <!-- Row 2 -->
+
+                            <!-- Column 1 -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button5"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/doctor"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/regular"
+                                        android:text="ডাক্তার"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <!-- Column 2 -->
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button6"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/fire"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="ফায়ার সার্ভিস"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button7"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="56dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/help" />
+
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/regular"
+                                        android:text="হেল্প লাইন"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button8"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/police"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/regular"
+                                        android:text="থানা পুলিশ"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button9"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/lawyer"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/regular"
+                                        android:text="আইনজীবী"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button10"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/journalist"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="সাংবাদিক"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button11"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/electry"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/regular"
+                                        android:text="পল্লী বিদ্যুৎ"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button12"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/hotel"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="হোটেল"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button13"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/resturent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="রেস্টুরেন্ট"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button14"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="51dp"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/bus" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="বাস টিকেট"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button15"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/rail"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="রেল সেবা"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button16"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/e_seba"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="ই-সেবা"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button17"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/place"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="দর্শনীয় স্থান"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button18"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/developer2"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="মেস/হোস্টেল"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button19"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/place"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="দর্শনীয় স্থান"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/Button20"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_columnWeight="1"
+                                android:layout_rowWeight="1"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <LinearLayout
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:src="@drawable/developer2"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_width="60dp"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:fontFamily="@font/regular"
+                                        android:text="মেস/হোস্টেল"
+                                        android:textAlignment="center"
+                                        android:textColor="#353434"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout >
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_View"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/navigation_menu"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#BA9A9A"
+            android:layout_below="@+id/drawer_layout"
+            android:id="@+id/con"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            >
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

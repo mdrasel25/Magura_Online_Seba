@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/drawarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#1ABC9C"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="40dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#7C7A7A"
+            >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="40dp"
+                    android:layout_margin="2dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/banar_boalmari_logo"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F1F0EF"
+                android:text="বোয়ালমারী অনলাইন সেবা"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/regular"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="জরুরী সকল সেবা হাতের মুঠোই"
+                android:textSize="13sp"
+                android:fontFamily="@font/regular"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Boalmari Online Seba</string>
+
+    <string name="open"></string>
+    <string name="close"></string>
+
+    <string name="Ads_Control_Url">https://clientcontrol123.blogspot.com/2022/10/blog-post.html</string>
+
+    <!-- Admob APP ID HERE -->
+    <string name="admob_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <!-- Admob Ad Unit IDS Here -->
+    <string name="admob_INTERSTITIAL_UNIT_ID">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

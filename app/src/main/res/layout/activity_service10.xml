@@ -1,0 +1,1696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Service_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Service10"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/app_themecolor"
+            >
+
+            <ImageView
+                android:id="@+id/back10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                />
+            <TextView
+                android:fontFamily="@font/regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="মাগুরা পল্লী বিদ্যুৎ"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F4F4F4"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="সদর অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মাগুরা সদর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401404"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="আলাইপুর অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মাগুরা সদর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-402100"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="13dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="শ্রীপুর সাব-জোনাল অফিসের অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="শ্রীপুর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401407"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="লাঙ্গলবাধ অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মাগুরা সদর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401408"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="13dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="আড়পাড়া জোনাল অফিসের অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="শালিখা উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401405"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli5"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="বুনাগাতী অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="শালিখা উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401411"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli6"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="সিংড়া অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="শালিখা উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401412"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli7"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="সীমাখালি অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="শালিখা উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-407029"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli8"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="13dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="মহম্মদপুর জোনাল অফিসের অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মহম্মদপুর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401406"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli9"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="রাজাপুর অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মহম্মদপুর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401409"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli10"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="বিনোদপুর অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মহম্মদপুর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-401410"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli11"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AFADAD"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#C6F8F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    android:outlineSpotShadowColor="#009688"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bottom_curved"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingVertical="25dp"
+
+                            >
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="21dp"
+                                android:text="বাবুখালি অভিযোগ কেন্দ্র"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="মহম্মদপুর উপজেলা"
+                                android:textSize="14sp"
+                                android:textColor="#535050"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="01769-402655"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginTop="4dp"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            >
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/polli12"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:lottie_rawRes="@raw/call"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"/>
+
+                            <TextView
+                                android:fontFamily="@font/regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কল করুন"
+                                android:textSize="15dp"
+                                android:gravity="center"
+                                android:textColor="#3C3B3B"
+                                android:layout_marginBottom="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="-5dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/bottom_curved2"
+                                android:layout_marginTop="105dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
